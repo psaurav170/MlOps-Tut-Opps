@@ -46,7 +46,7 @@ Designed to handle spelling variations, typos, and phonetic similarities.
 pip install rapidfuzz
 ---
 
-## 📌 Task 2: Local Recipe Recommendation Chatbot API
+**##** 📌 Task 2: Local Recipe Recommendation Chatbot API
 
 ### 📝 Description
 
