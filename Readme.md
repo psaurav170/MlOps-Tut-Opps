@@ -44,3 +44,49 @@ Designed to handle spelling variations, typos, and phonetic similarities.
 
 ```bash
 pip install rapidfuzz
+
+## 📌 Task 1: Name Matching System
+
+### 📝 Description
+
+A lightweight **REST API chatbot** that suggests recipes based on ingredients provided by the user.
+It uses set-based similarity matching to determine the most relevant recipe.
+
+### ✨ Features
+
+- Built using **FastAPIz**
+- Ingredient overlap–based scoring
+- Returns:
+  - Suggested recipe
+  - Matched ingredients
+  - Confidence level
+- No external APIs or machine learning required
+
+### ⚙️ Installation
+
+pip install fastapi uvicorn
+
+### ⚙️ Run the Server
+
+python recipe_chatbot.py
+http://127.0.0.1:8000
+
+### ⚙️ API Endpoint
+POST /get_recipe
+{
+  "ingredients": "egg, onion, salt"
+}
+#### Sample Response
+{
+  "chatbot_reply": "👩‍🍳 Here's a recipe you can try!",
+  "your_ingredients": ["egg", "onion", "salt"],
+  "matched_ingredients": ["egg", "onion", "salt"],
+  "suggested_recipe": "Egg Omelette: Beat eggs, add chopped onions and salt. Fry until golden.",
+  "confidence_level": "3 ingredient(s) matched"
+}
+
+### ⚙️ Interactive API Documentation
+FastAPI automatically generates Swagger UI:
+http://127.0.0.1:8000/docs
+
+
