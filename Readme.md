@@ -44,8 +44,9 @@ Designed to handle spelling variations, typos, and phonetic similarities.
 
 ```bash
 pip install rapidfuzz
+---
 
-## 📌 Task 1: Name Matching System
+## 📌 Task 2: Local Recipe Recommendation Chatbot API
 
 ### 📝 Description
 
